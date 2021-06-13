@@ -4,3 +4,7 @@ getNodeList <- function(df){
   node_list <- na.omit(node_list)
   return(node_list)
 }
+
+getEdgeList <- function(df){
+  edge_list = na.omit(df)
+}
