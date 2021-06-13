@@ -29,8 +29,13 @@ source("graphFunctions.R")
 
 nodes <- getNodeList(wiki_clean[1:2])
 edges <- getEdgeList(wiki_clean[,c(1,2,5)])
+
+x <- c("V1","V2","weight")
+colnames(edges) <- x
+
 wgraph <- graph_from_data_frame(d = edges, vertices = nodes, directed = TRUE)
 
+rm(x)
 rm(package.check)
 rm(packages)
 rm(wiki_clean)
