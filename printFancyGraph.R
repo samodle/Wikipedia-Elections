@@ -19,7 +19,7 @@ plot(network,
      vertex.label.degree=0 ,                       # The position of the label in relation to the vertex (use pi)
      
      # === Edge
-     edge.label = E(network)$weight,
+     edge.label = E(network)$name,
      edge.label.color="black",
      edge.label.cex=.5,
      edge.color="yellowgreen",                           # Edge color

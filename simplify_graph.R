@@ -7,7 +7,5 @@ s2 = delete.vertices(simplegraph, targetNodes)
 #message(paste('density after simplify function: ',igraph::edge_density(simplegraph)))
 message(paste('next step of simplification: ',igraph::edge_density(simplegraph)))
 
-par(bg="white")
-hist(igraph::degree(s2))
-
-#LO2 = LO[-Isolated,]
+#par(bg="white")
+#hist(igraph::degree(s2))

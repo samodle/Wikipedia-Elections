@@ -1,8 +1,4 @@
-## If a package is installed, it will be loaded. If any 
-## are not, the missing package(s) will be installed 
-## from CRAN and then loaded.
-
-rm(list = ls())
+rm(list = ls()) # clear everything to start
 
 ## First specify the packages of interest
 packages = c("readr", "igraph")
@@ -30,7 +26,7 @@ source("graphFunctions.R")
 nodes <- getNodeList(wiki_clean[1:2])
 edges <- getEdgeList(wiki_clean[,c(1,2,5)])
 
-x <- c("V1","V2","weight")
+x <- c("V1","V2","name") # using the year as the 'name' field
 colnames(edges) <- x
 
 wgraph <- graph_from_data_frame(d = edges, vertices = nodes, directed = TRUE)
@@ -40,6 +36,5 @@ rm(package.check)
 rm(packages)
 rm(wiki_clean)
 
-source("simplify_graph.R")
 
 
