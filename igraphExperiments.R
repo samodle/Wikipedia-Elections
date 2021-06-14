@@ -29,13 +29,13 @@ print(igraph::automorphisms(network3, sh="fm"))
 message(paste('-'))
 message(paste('Breadth-first search is an algorithm to traverse a graph. We start from a root vertex and spread along
 every edge “simultaneously”:'))
-igraph::bfs(network3, 1)
+print(igraph::bfs(network3, 1))
 
 
 message(paste('-'))
 message(paste('Depth-first search is an algorithm to traverse a graph. It starts from a root vertex and tries to go
 quickly as far from as possible:'))
-igraph::dfs(network3, 1)
+print(igraph::dfs(network3, 1))
 
 
 message(paste('-'))

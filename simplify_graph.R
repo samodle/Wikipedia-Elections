@@ -9,3 +9,6 @@ message(paste('next step of simplification: ',igraph::edge_density(simplegraph))
 
 #par(bg="white")
 #hist(igraph::degree(s2))
+
+rm(targetNodes)
+rm(simplegraph)

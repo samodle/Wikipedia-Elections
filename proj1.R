@@ -14,3 +14,9 @@ network3 <- network
 
 # part 5
 source("runGraphAnalysis.R")
+
+rm(edges)
+rm(nodes)
+rm(network)
+rm(network2)
+rm(s2)
