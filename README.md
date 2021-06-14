@@ -1,5 +1,6 @@
 # Wikipedia-Elections
 
+#### **NOTE:** We've found that depending on the available machine resources you may not be able to run the entir _proj1.R_ file at once.  If this is the case, the individual scripts can be run after running the initialization and simplification scripts (and may require renaming a graph using the console).
 
 ## File Overview
 - _proj1.R_ is the main/master file, running it should complete the entire lab at once
@@ -7,10 +8,9 @@
 - _simplify_graph.R_ turns the original graph into a much smaller graph
 - _runGraphAnalysis.R_ is part 5 (includes generating a graph of the largest clique, the rest is console output)
 - _printFancyGraph.R_ is simply a function to print the graph (must be named network -> a lot of these files rely on a graph being called network)
-- _introToGraphAnalyticsFunctions.R_ is part 3
-- _igraphExperiments.R_ is part 4
-
-
+- _introToGraphAnalyticsFunctions.R_ is part 3, and replicates functionality from the given doc
+- _igraphExperiments.R_ is part 4, and includes a selection of interesting igraph functionality
+- _simplificationExperiments_ shows how we landed on the method in _simplify_graph.R_
 
 
 ## The Dataset

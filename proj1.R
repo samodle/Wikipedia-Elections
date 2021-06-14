@@ -1,3 +1,5 @@
+# NOTE - Depending on your machine's resources, you may not be able to run this entire script at once.  
+
 source("initialization.R") # load cleaned data, separate out dfs for nodes & edges then create graph 
 source("simplify_graph.R") # simplify the graph
 rm(wgraph)
