@@ -2,4 +2,9 @@ source("initialization.R") # load cleaned data, separate out dfs for nodes & edg
 source("simplify_graph.R") # simplify the graph
 network <- s2 # use the network variable for other functions
 source("printFancyGraph.R") # plot the graph, make it look good
+
+# part 3
+source("introToGraphAnalyticsFunctions.R")
+
+# part 5
 source("runGraphAnalysis.R")
