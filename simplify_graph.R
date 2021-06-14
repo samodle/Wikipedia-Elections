@@ -1,7 +1,7 @@
 library(igraph)
 simplegraph <- igraph::simplify(wgraph)
 targetNodes = which(igraph::degree(simplegraph) < 700)
-s2 = delete.vertices(simplegraph, targetNodes)
+s2 = igraph::delete.vertices(simplegraph, targetNodes)
 
 #message(paste('original graph density: ',igraph::edge_density(simplegraph)))
 #message(paste('density after simplify function: ',igraph::edge_density(simplegraph)))

@@ -8,6 +8,7 @@
 - _runGraphAnalysis.R_ is part 5 (includes generating a graph of the largest clique, the rest is console output)
 - _printFancyGraph.R_ is simply a function to print the graph (must be named network -> a lot of these files rely on a graph being called network)
 - _introToGraphAnalyticsFunctions.R_ is part 3
+- _igraphExperiments.R_ is part 4
 
 
 

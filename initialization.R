@@ -21,7 +21,6 @@ wiki_clean <- read_csv("wiki_clean.csv", col_types = cols(X1 = col_skip()))
 
 library(igraph)
 source("getNodeList.R")
-source("graphFunctions.R")
 
 nodes <- getNodeList(wiki_clean[1:2])
 edges <- getEdgeList(wiki_clean[,c(1,2,5)])

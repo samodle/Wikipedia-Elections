@@ -26,12 +26,6 @@ print(igraph::degree(network2))
 
 
 message(paste('-'))
-message(paste('Ego:'))
-network2.ego <- sna::ego.extract(network2)
-print(network2.ego[1])
-
-
-message(paste('-'))
 message(paste('Betweenness Centrality:'))
 print(igraph::centr_betw(network2))
 
