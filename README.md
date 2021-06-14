@@ -2,7 +2,7 @@
 
 
 ## File Overview
-- _proj1.R _ is the main/master file, running it should complete the entire lab at once
+- _proj1.R_ is the main/master file, running it should complete the entire lab at once
 - _initialization.R_ loads the cleaned dataset and turns it into a graph
 - _simplify_graph.R_ turns the original graph into a much smaller graph
 - _runGraphAnalysis.R_ is part 5 (includes generating a graph of the largest clique, the rest is console output)
