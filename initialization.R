@@ -1,7 +1,7 @@
 rm(list = ls()) # clear everything to start
 
 ## First specify the packages of interest
-packages = c("readr", "igraph")
+packages = c("readr", "igraph", "sna")
 
 ## Now load or install&load all
 package.check <- lapply(

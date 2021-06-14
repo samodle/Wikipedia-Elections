@@ -4,7 +4,7 @@ network <- s2 # use the network variable for other functions
 source("printFancyGraph.R") # plot the graph, make it look good
 
 # part 3
-source("introToGraphAnalyticsFunctions.R")
+# source("introToGraphAnalyticsFunctions.R")
 
 # part 5
 source("runGraphAnalysis.R")
