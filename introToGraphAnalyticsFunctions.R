@@ -40,3 +40,6 @@ message(paste('Shortest Paths:'))
 network2.sp <- igraph::shortest.paths(network2)
 print(network2.sp)
 
+rm(network2.adj)
+rm(network2.sp)
+

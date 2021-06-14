@@ -1,3 +1,5 @@
+message(paste('--- #5 a through e ---'))
+
 # Determine the: 
 # (a) central nodes(s) in the graph, 
 # (b) longest path(s), 
@@ -75,3 +77,12 @@ print(round(e, 3))
 # for (e in seq(-0.5,.5, by=0.1)) {
 #  print(round(power_centrality(network, exp=e)[c(1,2,4)], 3))
 # }
+
+
+rm(a)
+rm(b)
+rm(c)
+rm(d)
+rm(e)
+rm(l)
+rm(clique1)
