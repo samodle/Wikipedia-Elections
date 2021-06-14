@@ -16,6 +16,12 @@ print(a$vector)
 # Longest Path
 #
 
+#for the longest path we are taking the longest geodisic of the graph
+# The diameter of a graph is the length of the longest geodesic. 
+message(paste('---Longest Path---'))
+b <- diameter(network)
+print(b)
+
 # b <- farthest_vertices(network)
 
 #
@@ -31,17 +37,37 @@ clique1 <- c[[1]]
 g2 <- induced.subgraph(graph=network,vids=clique1)
 
 # plot the clique
-plot(g2)
+#plot(g2)
+l <- layout.fruchterman.reingold(g2, niter=5000)
+plot(g2, layout=l,
+     edge.arrow.size=0.5,
+     #vertex.label = NA,
+     vertex.label.cex=0.75,
+     vertex.label.family="Helvetica",
+     vertex.label.font=2,
+     vertex.label.dist= 1,
+     vertex.shape="circle",
+     vertex.size=1,
+     asp=0.5,
+     vertex.label.color="black",
+     edge.arrow.size = 0.001,
+     edge.width=0.5)
 
 #
 # Ego
 #
 
+message(paste('---Ego(s)---'))
+d<-ego(network)
+print(ego(network, 1))
+#print(ego(network, 2))
+#print(ego(network, 3))
 
 #
 # Power Centrality
 #
-e <- power_centrality(network, exp=e)
+#e <- power_centrality(network, exp=e)
+e <- power_centrality(network)
 
 message(paste('---Power Centrality---'))
 print(round(e, 3))
